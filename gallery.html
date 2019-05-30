@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <h1>FOODIE RESTAURANT</h1>
         <title>Image gallery</title>
-        <style> 
-        div.img {
-            margin: 30px;
-            border: 2px solid #ccc;
+        <link href="foodie.css" type="text/css" rel="stylesheet">
+    
+    </head>
+    <style>
+     div.img {
+            margin: 10px;
+            border: 1px snow rgb(204, 204, 204);
             float: left;
-            width: 180px;
+            width: 400px;
+            padding: 10px;
+            border-color: white;
+
+        
         }
         div.img:hover {
-border: 1px solid #777;
+             border: 1px solid #777;
         }       
 
         div.img img {
@@ -19,22 +27,58 @@ border: 1px solid #777;
         }
 
         div.desc {
-            padding: 15px;
+            padding: 5px;
             text-align: center;
             border: black;
-            background-color: aquamarine
+            background-color: lightgreen;
         }
-        
-        </style>
+        body {
+  
+  background-color: #cccccc;
+  background: url("bckimage1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+}
     
-    </head>
+    
+    </style>
     <body>
+        <div class="entire" style=" overflow:hidden;">
+
+        <p> One cannot think well, love well, sleep well,<br> if one has not dined well." -Virginia Woolf</p>
+    
+        <nav id="header-link">
+            
+            <ul>
+                     <a> Menu &emsp;</a>
+                     <a>Order  &emsp;</a>
+                     <a>Contact  &emsp;</a>
+                     <a>Our story  &emsp;</a>
+            </ul>
+            </nav>
+
+            <nav class="header-link1">
+                <a> Find a Restaurant & Find a Table</a> <br>
+                <form>
+                        <input type="text" style="color: red ; background-color: mediumaquamarine;">
+                        <input type="submit" value="search" style="color: oldlace; background-color: navy;">
+                </form>
+            </nav>
+
+    
+
         
         <div class="container">
+        
 
-       <div class="img">
+       <div class="img" id="f1">
            <a target="_blank" href="G:\Image_gallery\indian.jpg">
-           <img src="G:\Image_gallery\indian.jpg" alt="food1" width="300" height="200"> 
+           <img src="G:\Image_gallery\indian.jpg" alt="food1"> 
            </a>
   <div class="desc">Indian food</div>
 
@@ -44,7 +88,7 @@ border: 1px solid #777;
 
         <div class="img">
                 <a target="_blank" href="G:\Image_gallery\kerala.jpg">
-                <img src="G:\Image_gallery\kerala.jpg" alt="food2" width="300" height="200"> 
+                <img src="G:\Image_gallery\kerala.jpg" alt="food2"> 
                 </a>
        <div class="desc">kerala food</div>
      
@@ -54,16 +98,17 @@ border: 1px solid #777;
 
              <div class="img">
                     <a target="_blank" href="G:\Image_gallery\jap.png">
-                    <img src="G:\Image_gallery\jap.png" alt="food3" width="300" height="200"> 
+                    <img src="G:\Image_gallery\jap.png" alt="food3" >
                     </a>
            <div class="desc">japanese food</div>
          
                  </div>
+    
 
 
-                 <div class="img">
+                 <div class="img"> <br>
                         <a target="_blank" href="G:\Image_gallery\chinese.jpg">
-                        <img src="G:\Image_gallery\chinese.jpg" alt="food4" width="300" height="200"> 
+                        <img src="G:\Image_gallery\chinese.jpg" alt="food4"> 
                         </a>
                <div class="desc">Chinese food</div>
              
@@ -73,13 +118,14 @@ border: 1px solid #777;
 
                      <div class="img">
                             <a target="_blank" href="G:\Image_gallery\american.jpg">
-                            <img src="G:\Image_gallery\american.jpg" alt="food5" width="300" height="200"> 
+                            <img src="G:\Image_gallery\american.jpg" alt="food5"> 
                             </a>
                    <div class="desc">american food</div>
                  
                          </div>
                 
 
+        </div>
         </div>
     </body>
 </html>
